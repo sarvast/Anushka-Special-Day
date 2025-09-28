@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" type="image/png" href="https://i.ibb.co/yMPRDsR/favicon.png" />
+  <title>Happy Birthday!!! :)</title>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- My Style -->
+  <style>
+    html {
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+
+    /* Background and base text styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: #e6e6e6;
+      font-weight: 400;
+      overflow-x: hidden;
+      touch-action: manipulation;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    .container {
+      height: 100vh;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      visibility: hidden;
+      width: 100%;
+      max-width: 100vw;
+    }
+
+    .container > div {
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 20vh;
+      width: 100%;
+      padding: 0 5%;
+      box-sizing: border-box;
+    }
+
+    .one {
+      font-size: 4.5rem;
+    }
+
+    .two {
+      font-size: 1.5rem;
+    }
+
+    .three {
+      font-size: 3rem;
+    }
+
+    /* Improved color scheme */
+    .one, .three, .five p, .wish-hbd, .nine p {
+      color: #ff6b9d; /* Soft pink */
+      font-weight: 700;
+      text-shadow: 0 0 10px rgba(255, 107, 157, 0.5);
+    }
+
+    .two {
+      color: #6de5ff; /* Soft cyan */
+      font-weight: 600;
+      text-shadow: 0 0 10px rgba(109, 229, 255, 0.4);
+    }
+
+    .four .text-box {
+      border: 3px solid #ff9e7d; /* Soft orange */
+      border-radius: 10px;
+      margin: 0 auto;
+      padding: 15px;
+      position: relative;
+      width: 600px;
+      max-width: 90%;
+      background: rgba(255, 158, 125, 0.1);
+      color: #ffd8cc;
+      font-weight: 500;
+      box-shadow: 0 0 15px rgba(255, 158, 125, 0.3);
+    }
+
+    .text-box p {
+      margin: 0;
+      text-align: left;
+    }
+
+    .text-box span {
+      visibility: hidden;
+    }
+
+    .text-box .fake-btn {
+      background: linear-gradient(to right, #ff9e7d, #ff6b9d);
+      border-radius: 20px;
+      bottom: -50px;
+      color: #fff;
+      padding: .7rem 1.5rem;
+      position: absolute;
+      right: 5px;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(255, 107, 157, 0.3);
+    }
+
+    .five p {
+      font-size: 2rem;
+      left: 0;
+      position: absolute;
+      right: 0;
+    }
+
+    .idea-3 strong {
+      border-radius: 5px;
+      display: inline-block;
+      padding: 5px 10px;
+      background: rgba(109, 229, 255, 0.2);
+      color: #6de5ff;
+    }
+
+    .five .idea-5 {
+      font-size: 4rem;
+      color: #b19cff; /* Soft purple */
+      font-weight: 700;
+      text-shadow: 0 0 15px rgba(177, 156, 255, 0.5);
+    }
+
+    .idea-5 span, .idea-6 span, .wish-hbd span {
+      display: inline-block;
+    }
+
+    .idea-6 span{
+      font-size: 15rem;
+      color: #ff9e7d; /* Soft orange */
+      text-shadow: 0 0 20px rgba(255, 158, 125, 0.6);
+    }
+
+    .six {
+      position: relative;
+      top: 10vh;
+      z-index: 1;
+    }
+
+    /* Profile picture and images keep original look */
+    .six img {
+      display: inline-block;
+      height: 350px;
+      max-width: 90%;
+      max-height: 50vh;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .six .hat {
+      left: 41.5%;
+      position: absolute;
+      top: -35%;
+      width: 80px;
+      max-width: 20vw;
+      filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.3));
+    }
+
+    /* Increased balloon sizes */
+    .baloons img {
+      display: inline-block;
+      position: absolute;
+      max-width: 150px; /* Increased from 80px */
+      height: auto;
+      filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.3));
+      z-index: 10;
+    }
+
+    .baloons img:nth-child(even) {
+      left: -10%;
+    }
+
+    .baloons img:nth-child(odd) {
+      right: -10%;
+    }
+
+    .baloons img:nth-child(3n + 0) {
+      left: 30%;
+    }
+
+    .seven, .eight {
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      width: 100vw;
+    }
+
+    .eight svg {
+      left: 0;
+      position: absolute;
+      top: 0;
+      visibility: hidden;
+      width: 25px;
+      z-index: -1;
+    }
+
+    .eight svg:nth-child(1) {
+      fill: #ff6b9d;
+      left: 5vw;
+      top: 7vh;
+    }
+
+    .eight svg:nth-child(2) {
+      fill: #6de5ff;
+      left: 35vw;
+      top: 23vh;
+    }
+
+    .eight svg:nth-child(3) {
+      fill: #b19cff;
+      left: 23vw;
+      top: 33vh;
+    }
+
+    .eight svg:nth-child(4) {
+      fill: #ff9e7d;
+      left: 57vw;
+      top: 43vh;
+    }
+
+    .eight svg:nth-child(5) {
+      fill: #ffd166;
+      left: 7vw;
+      top: 68vh;
+    }
+
+    .eight svg:nth-child(6) {
+      fill: #a8e6cf;
+      left: 77vw;
+      top: 42vh;
+    }
+
+    .eight svg:nth-child(7) {
+      fill: #ffaaa5;
+      left: 83vw;
+      top: 68vh;
+    }
+
+    .eight svg:nth-child(8) {
+      fill: #9d8dff;
+      left: 37vw;
+      top: 86vh;
+    }
+
+    .eight svg:nth-child(9) {
+      fill: #a8d8ea;
+      left: 87vw;
+      top: 94vh;
+    }
+
+    .wish-hbd {
+      font-size: 3.5em;
+      margin: 0;
+      text-transform: uppercase;
+      color: #ffffff; /* Solid white for maximum visibility */
+      background: none; /* Removed gradient for clarity */
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.9); /* Stronger shadow for better visibility */
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 15px;
+    }
+
+    .wish h5 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin: 10px 0 0;
+      color: #ffd8cc;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 10px 20px;
+      border-radius: 10px;
+      display: inline-block;
+      line-height: 1.4;
+    }
+
+    .nine p {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+
+    /* Neon effect on small interactive text */
+    #replay {
+      color: #6de5ff;
+      font-weight: 700;
+      cursor: pointer;
+      z-index: 3;
+      padding: 10px 20px;
+      display: inline-block;
+      -webkit-tap-highlight-color: transparent;
+      border-radius: 30px;
+      background: rgba(109, 229, 255, 0.1);
+      transition: all 0.3s ease;
+      margin: 10px 0;
+    }
+
+    #replay:hover {
+      background: rgba(109, 229, 255, 0.2);
+      transform: scale(1.05);
+    }
+
+    .last-smile {
+      font-size: 3rem;
+      margin: 10px 0;
+    }
+
+    /* Emotional apology text */
+    .apology {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #ffaaa5;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 15px;
+      line-height: 1.6;
+      background: rgba(255, 170, 165, 0.1);
+      border-radius: 10px;
+      border-left: 4px solid #ffaaa5;
+    }
+
+    /* Enhanced Media Queries for better mobile compatibility */
+    @media screen and (max-height: 1000px) {
+      .six .hat {
+        left: 40%;
+      }
+    }
+
+    @media screen and (max-height: 800px) {
+      .six .hat {
+        left: 37%;
+      }
+      
+      .container > div {
+        top: 15vh;
+      }
+    }
+
+    @media screen and (max-height: 700px) {
+      .six .hat {
+        left: 32%;
+      }
+      
+      .container > div {
+        top: 10vh;
+      }
+      
+      .six img {
+        height: 250px;
+      }
+      
+      .baloons img {
+        max-width: 120px;
+      }
+    }
+
+    @media screen and (max-height: 850px) and (max-width: 450px) {
+      .six .hat {
+        left: 32%;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      .one {
+        font-size: 4rem;
+      }
+      
+      .three {
+        font-size: 2.5rem;
+      }
+      
+      .five p {
+        font-size: 1.8rem;
+      }
+      
+      .five .idea-5 {
+        font-size: 3.5rem;
+      }
+      
+      .baloons img {
+        max-width: 130px;
+      }
+      
+      .wish-hbd {
+        font-size: 3em;
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      .one {
+        font-size: 3.5rem;
+      }
+      
+      .three {
+        font-size: 2.2rem;
+      }
+      
+      .idea-6 span {
+        font-size: 12rem;
+      }
+      
+      .wish-hbd {
+        font-size: 2.8em;
+      }
+      
+      .wish h5 {
+        font-size: 1.7rem;
+      }
+      
+      .baloons img {
+        max-width: 120px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .container > div {
+        top: 15vh;
+      }
+      
+      .one {
+        font-size: 3rem;
+      }
+      
+      .two {
+        font-size: 1.3rem;
+      }
+      
+      .three {
+        font-size: 2rem;
+        line-height: 1.3;
+      }
+      
+      .five p {
+        font-size: 1.6rem;
+      }
+      
+      .five .idea-5 {
+        font-size: 3rem;
+      }
+      
+      .idea-6 span {
+        font-size: 10rem;
+      }
+      
+      .six img {
+        height: 300px;
+      }
+      
+      .six .hat {
+        width: 70px;
+        top: -30%;
+      }
+      
+      .wish-hbd {
+        font-size: 2.5em;
+        padding: 8px 15px;
+      }
+      
+      .wish h5 {
+        font-size: 1.5rem;
+        padding: 8px 15px;
+      }
+      
+      .nine p {
+        font-size: 1.7rem;
+      }
+      
+      .apology {
+        font-size: 14px;
+      }
+      
+      .baloons img {
+        max-width: 100px;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .container {
+        width: 100%;
+      }
+      
+      .container > div {
+        top: 10vh;
+      }
+
+      .four .text-box {
+        width: 90%;
+      }
+
+      .text-box .fake-btn {
+        bottom: -38px;
+        right: 5px;
+      }
+
+      .idea-5 span {
+        display: block;
+      }
+
+      .idea-6 span {
+        font-size: 8rem;
+      }
+
+      .six .hat {
+        width: 60px;
+        top: -25%;
+      }
+
+      .wish-hbd {
+        font-size: 2.2em;
+        padding: 6px 12px;
+      }
+
+      .wish h5 {
+        font-size: 1.3rem;
+        padding: 6px 12px;
+      }
+
+      .nine p {
+        font-size: 1.5rem;
+      }
+      
+      .one {
+        font-size: 2.5rem;
+      }
+      
+      .two {
+        font-size: 1.1rem;
+      }
+      
+      .three {
+        font-size: 1.7rem;
+      }
+      
+      .five p {
+        font-size: 1.4rem;
+      }
+      
+      .five .idea-5 {
+        font-size: 2.5rem;
+      }
+      
+      .six img {
+        height: 250px;
+      }
+      
+      .apology {
+        font-size: 13px;
+        padding: 0 15px;
+      }
+      
+      .baloons img {
+        max-width: 80px;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .one {
+        font-size: 2.2rem;
+      }
+      
+      .three {
+        font-size: 1.5rem;
+      }
+      
+      .five p {
+        font-size: 1.2rem;
+      }
+      
+      .five .idea-5 {
+        font-size: 2.2rem;
+      }
+      
+      .idea-6 span {
+        font-size: 6rem;
+      }
+      
+      .six img {
+        height: 200px;
+      }
+      
+      .six .hat {
+        width: 50px;
+        top: -20%;
+      }
+      
+      .wish-hbd {
+        font-size: 1.8em;
+        padding: 5px 10px;
+      }
+      
+      .wish h5 {
+        font-size: 1.1rem;
+        padding: 5px 10px;
+      }
+      
+      .apology {
+        font-size: 12px;
+      }
+      
+      .baloons img {
+        max-width: 70px;
+      }
+    }
+
+    /* Landscape orientation adjustments */
+    @media screen and (max-height: 500px) and (orientation: landscape) {
+      .container > div {
+        top: 5vh;
+      }
+      
+      .one {
+        font-size: 2.5rem;
+      }
+      
+      .three {
+        font-size: 1.8rem;
+      }
+      
+      .five p {
+        font-size: 1.4rem;
+      }
+      
+      .six img {
+        height: 200px;
+      }
+      
+      .six .hat {
+        width: 50px;
+        top: -25%;
+      }
+      
+      .wish-hbd {
+        font-size: 2em;
+      }
+      
+      .wish h5 {
+        font-size: 1.2rem;
+      }
+      
+      .baloons img {
+        max-width: 80px;
+      }
+    }
+
+    /* Extra small devices */
+    @media screen and (max-width: 350px) {
+      .one {
+        font-size: 1.8rem;
+      }
+      
+      .two {
+        font-size: 1rem;
+      }
+      
+      .three {
+        font-size: 1.3rem;
+      }
+      
+      .five p {
+        font-size: 1rem;
+      }
+      
+      .five .idea-5 {
+        font-size: 1.8rem;
+      }
+      
+      .idea-6 span {
+        font-size: 5rem;
+      }
+      
+      .wish-hbd {
+        font-size: 1.5em;
+      }
+      
+      .wish h5 {
+        font-size: 1rem;
+      }
+      
+      .baloons img {
+        max-width: 60px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="one">
+      <h1 class="one">
+        Hi <span id="name">Madam Anushka Rani Singh</span>,
+      </h1>
+      <p class="two" id="greetingText">
+        Wishing you the brightest smiles and endless happiness today! 🎂✨
+      </p>
+    </div>
+
+    <div class="three">
+      <p>It's finally your special day, Madam! Let's celebrate you, your kindness, and all the joy you bring. 🥳</p>
+    </div>
+
+    <div class="four">
+      <div class="text-box">
+        <p class="hbd-chatbox">
+          Happy Birthday, Madam! You're truly an amazing person and you deserve all the love, laughter, and happiness in the world. 💖
+        </p>
+        <p class="fake-btn">Send</p>
+      </div>
+    </div>
+
+    <div class="five">
+      <p class="idea-1">At first, I didn't know how to put it into words... 🤔</p>
+      <p class="idea-2">But then I thought about how wonderful you really are. 💭</p>
+      <p class="idea-3">
+        You bring positivity, strength, and inspiration wherever you go.<br>
+        <strong>That's what makes you special! ✨</strong>
+      </p>
+      <p class="idea-4">And that's why... 🌟</p>
+      <p class="idea-5">
+        You are truly Amazing <span>💫</span>
+      </p>
+      <p class="idea-6">
+        <span>S</span>
+        <span>O</span>
+      </p>
+    </div>
+
+    <div class="six">
+      <img src="https://i.ibb.co/rGGYnDLG/anushka.jpg" alt="Anushka's Profile" class="profile-picture" id="imagePath"/>
+      <img src="https://i.ibb.co/NgqTPphk/hat.png" alt="hat" border="0" class="hat" />
+      <div class="wish">
+        <h3 class="wish-hbd">Happy Birthday, Madam! 🎉</h3>
+        <h5 id="wishText">May this year bring you joy, growth,<br>and everything your heart desires. 🌸</h5>
+      </div>
+    </div>
+
+    <div class="seven">
+      <div class="baloons">
+        <img src="https://i.ibb.co/7t9hyjPq/ballon2.png" alt="ballon2" border="0" />
+        <img src="https://i.ibb.co/NdQP4Yq3/ballon1.png" alt="Balloon">
+        <img src="https://i.ibb.co/PZwrMQjN/ballon3.png" alt="ballon3" border="0" />
+        <img src="https://i.ibb.co/NdQP4Yq3/ballon1.png" alt="Balloon" />
+        <img src="https://i.ibb.co/7t9hyjPq/ballon2.png" alt="ballon2" border="0" />
+        <img src="https://i.ibb.co/PZwrMQjN/ballon3.png" alt="ballon3" border="0" />
+        <img src="https://i.ibb.co/7t9hyjPq/ballon2.png" alt="ballon2" border="0" />
+        <img src="https://i.ibb.co/PZwrMQjN/ballon3.png" alt="ballon3" border="0" />
+        <img src="https://i.ibb.co/NdQP4Yq3/ballon1.png" alt="Balloon" />
+        <img src="https://i.ibb.co/7t9hyjPq/ballon2.png" alt="ballon2" border="0" />
+        <img src="https://i.ibb.co/PZwrMQjN/ballon3.png" alt="ballon3" border="0" />
+        <img src="https://i.ibb.co/7t9hyjPq/ballon2.png" alt="ballon2" border="0" />
+        <img src="https://i.ibb.co/NdQP4Yq3/ballon1.png" alt="Balloon" />
+        <img src="https://i.ibb.co/PZwrMQjN/ballon3.png" alt="ballon3" border="0" />
+        <img src="https://i.ibb.co/7t9hyjPq/ballon2.png" alt="ballon2" border="0" />
+        <img src="https://i.ibb.co/PZwrMQjN/ballon3.png" alt="ballon3" border="0" />
+        <img src="https://i.ibb.co/NdQP4Yq3/ballon1.png" alt="Balloon" />
+        <img src="https://i.ibb.co/7t9hyjPq/ballon2.png" alt="ballon2" border="0" />
+        <img src="https://i.ibb.co/NdQP4Yq3/ballon1.png" alt="Balloon" />
+        <img src="https://i.ibb.co/PZwrMQjN/ballon3.png" alt="ballon3" border="0" />
+        <img src="https://i.ibb.co/PZwrMQjN/ballon3.png" alt="ballon3" border="0" />
+        <img src="https://i.ibb.co/NdQP4Yq3/ballon1.png" alt="Balloon" />
+        <img src="https://i.ibb.co/7t9hyjPq/ballon2.png" alt="ballon2" border="0" />
+        <img src="https://i.ibb.co/PZwrMQjN/ballon3.png" alt="ballon3" border="0" />
+        <img src="https://i.ibb.co/7t9hyjPq/ballon2.png" alt="ballon2" border="0" />
+        <img src="https://i.ibb.co/NdQP4Yq3/ballon1.png" alt="Balloon" />
+        <img src="https://i.ibb.co/PZwrMQjN/ballon3.png" alt="ballon3" border="0" />
+        <img src="https://i.ibb.co/7t9hyjPq/ballon2.png" alt="ballon2" border="0" />
+        <img src="https://i.ibb.co/PZwrMQjN/ballon3.png" alt="ballon3" border="0" />
+        <img src="https://i.ibb.co/NdQP4Yq3/ballon1.png" alt="Balloon" />
+        <img src="https://i.ibb.co/7t9hyjPq/ballon2.png" alt="ballon2" border="0" />
+        <img src="https://i.ibb.co/NdQP4Yq3/ballon1.png" alt="Balloon" />
+        <img src="https://i.ibb.co/PZwrMQjN/ballon3.png" alt="ballon3" border="0" />
+      </div>
+    </div>
+
+    <div class="eight">
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" />
+      </svg>
+    </div>
+
+    <div class="nine">
+      <p>Keep shining, keep smiling 🌟</p>
+      <p id="replay">Tap here to celebrate again! 🔄</p>
+      <p class="last-smile">😊</p>
+      
+      <!-- Guilt + Sorry at the end -->
+      <p class="apology">
+        Madam, ek baat last mein… I know I've hurt you many times, and for that I'm truly sorry 🙏  
+        Still, I hope today is full of happiness because you deserve nothing less. 💖
+      </p>
+    </div>
+  </div>
+
+  <!-- Greensock -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script>
+    // Start animation immediately when page loads
+    window.addEventListener('load', () => {
+      animationTimeline();
+    });
+
+    // animation timeline
+    const animationTimeline = () => {
+      // split chars that needs to be animated individually
+      const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
+      const hbd = document.getElementsByClassName("wish-hbd")[0];
+
+      textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
+          .split("")
+          .join("</span><span>")}</span>`;
+
+      hbd.innerHTML = `<span>${hbd.innerHTML
+          .split("")
+          .join("</span><span>")}</span>`;
+
+      const ideaTextTrans = {
+          opacity: 0,
+          y: -20,
+          rotationX: 5,
+          skewX: "15deg"
+      }
+
+      const ideaTextTransLeave = {
+          opacity: 0,
+          y: 20,
+          rotationY: 5,
+          skewX: "-15deg"
+      }
+
+      // timeline
+      const tl = gsap.timeline();
+
+      tl.to(".container", 0.6, {
+          visibility: "visible"
+      })
+      .from(".one", 0.7, {
+          opacity: 0,
+          y: 10
+      })
+      .from(".two", 0.4, {
+          opacity: 0,
+          y: 10
+      })
+      .to(".one",
+          0.7,
+          {
+              opacity: 0,
+              y: 10
+          },
+      "+=3.5")
+      .to(".two",
+          0.7,
+          {
+              opacity: 0,
+              y: 10
+          },
+      "-=1")
+      .from(".three", 0.7, {
+          opacity: 0,
+          y: 10
+      })
+      .to(".three",
+          0.7,
+          {
+              opacity: 0,
+              y: 10
+          },
+      "+=3")
+      .from(".four", 0.7, {
+          scale: 0.2,
+          opacity: 0,
+      })
+      .from(".fake-btn", 0.3, {
+          scale: 0.2,
+          opacity: 0,
+      })
+      .to(".hbd-chatbox span", {
+          duration: 1.5,
+          stagger: 0.05,
+          visibility: "visible",
+      })
+      .to(".fake-btn", 0.1, {
+          backgroundColor: "rgb(127, 206, 248)",
+      },
+      "+=4")
+      .to(
+          ".four",
+          0.5, {
+              scale: 0.2,
+              opacity: 0,
+              y: -150
+          },
+      "+=1")
+      .from(".idea-1", 0.7, ideaTextTrans)
+      .to(".idea-1", 0.7, ideaTextTransLeave, "+=2.5")
+      .from(".idea-2", 0.7, ideaTextTrans)
+      .to(".idea-2", 0.7, ideaTextTransLeave, "+=2.5")
+      .from(".idea-3", 0.7, ideaTextTrans)
+      .to(".idea-3 strong", 0.5, {
+          scale: 1.2,
+          x: 10,
+          backgroundColor: "rgb(21, 161, 237)",
+          color: "#fff",
+      })
+      .to(".idea-3", 0.7, ideaTextTransLeave, "+=2.5")
+      .from(".idea-4", 0.7, ideaTextTrans)
+      .to(".idea-4", 0.7, ideaTextTransLeave, "+=2.5")
+      .from(
+          ".idea-5",
+          0.7, {
+              rotationX: 15,
+              rotationZ: -10,
+              skewY: "-5deg",
+              y: 50,
+              z: 10,
+              opacity: 0,
+          },
+          "+=1.5"
+      )
+      .to(
+          ".idea-5 span",
+          0.7, {
+              rotation: 90,
+              x: 8,
+          },
+          "+=1.4"
+      )
+      .to(
+          ".idea-5",
+          0.7, {
+              scale: 0.2,
+              opacity: 0,
+          },
+          "+=2"
+      )
+      .from(
+          ".idea-6 span",
+          {
+              duration: 0.8,
+              stagger: 0.2,
+              scale: 3,
+              opacity: 0,
+              rotation: 15,
+              ease: "expo.out",
+          }
+      )
+      .to(
+          ".idea-6 span",
+          {
+              duration: 0.8,
+              stagger: 0.2,
+              scale: 3,
+              opacity: 0,
+              rotation: -15,
+              ease: "expo.out",
+          },
+          "+=1.5"
+      )
+      .fromTo(
+          ".baloons img",
+          {
+              opacity: 0.9,
+              y: 1400,
+          }, 
+          {
+              duration: 2.5,
+              stagger: 0.2,
+              opacity: 1,
+              y: -1000,
+          }
+      )
+      .from(
+          ".profile-picture",
+          0.5, {
+              scale: 3.5,
+              opacity: 0,
+              x: 25,
+              y: -25,
+              rotationZ: -45,
+          },
+          "-=2"
+      )
+      .from(".hat", 0.5, {
+          x: -100,
+          y: 350,
+          rotation: -180,
+          opacity: 0,
+      })
+      .from(
+          ".wish-hbd span",
+          {
+              duration: 0.7,
+              stagger: 0.1,
+              opacity: 0,
+              y: -50,
+              rotation: 150,
+              skewX: "30deg",
+              ease: "elastic.out(1, 0.5)",
+          }
+      )
+      .fromTo(
+          ".wish-hbd span",
+          {
+              scale: 1.4,
+              rotationY: 150,
+          }, 
+          {
+              duration: 0.7,
+              stagger: 0.1,
+              scale: 1,
+              rotationY: 0,
+              color: "#ff69b4",
+              ease: "expo.out",
+          },
+          "party"
+      )
+      .from(
+          ".wish h5",
+          0.5, {
+              opacity: 0,
+              y: 10,
+              skewX: "-15deg",
+          },
+          "party"
+      )
+      .to(
+          ".eight svg",
+          {
+              duration: 1.5,
+              stagger: 0.3,
+              visibility: "visible",
+              opacity: 0,
+              scale: 80,
+              repeat: 3,
+              repeatDelay: 1.4,
+          }
+      )
+      .to(".six", 0.5, {
+          opacity: 0,
+          y: 30,
+          zIndex: "-1",
+      })
+      .from(".nine p", {
+          duration: 1,
+          stagger: 1.2,
+          opacity: 0,
+          y: -20,
+          rotationX: 5,
+          skewX: "15deg"
+      })
+      .to(
+          ".last-smile",
+          0.5, {
+              rotation: 90,
+          },
+          "+=1"
+      );
+
+      // Restart Animation on click
+      const replyBtn = document.getElementById("replay");
+      replyBtn.addEventListener("click", () => {
+          tl.restart();
+      });
+      
+      // Add touch support for mobile
+      replyBtn.addEventListener("touchstart", function(e) {
+        e.preventDefault();
+        tl.restart();
+      }, {passive: false});
+    }
+  </script>
+</body>
+</html>
